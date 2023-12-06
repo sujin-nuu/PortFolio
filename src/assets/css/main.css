@@ -1,0 +1,184 @@
+:root {
+    --max-width: 1100px;
+    --border-radius: 12px;
+    --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+        'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+        'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+}
+
+#root{
+    width: 100vw;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: 'EF_watermelonSalad';
+    color: #3f3f3f;
+    overflow-y: hidden;
+}
+
+body {
+    background: linear-gradient(to bottom,
+            transparent,
+            rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header-div {
+    width: 100%;
+    height: 5rem;
+    border-bottom: solid 1px #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'ghanachoco';
+    color: #272727;
+    font-size: 2.6rem;
+    font-weight: 600;
+    padding-left: 2rem;
+}
+
+.logo:hover {
+    transition: opacity .3s;
+    cursor: pointer;
+    opacity: .5;
+    text-decoration: none;
+}
+
+.mainCard {
+    width: 16rem;
+    height: 16rem;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.top_area>span{
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    background-color: #e0ecff;
+    color: #1c316e;
+    border-radius: 4px;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+.top_area>p{
+    margin: 1rem 0;
+    color: #a5a5a5;
+    font-weight: 1.2rem;
+}
+
+.bottom_area{
+    padding-bottom: 0.5rem;
+}
+
+.yScroll{
+    width: 100%;
+    height: calc(100% - 5rem);
+    overflow-y: scroll;
+}
+
+.yScroll::-webkit-scrollbar {
+    width: 10px;
+    /* 스크롤바의 너비 */
+}
+
+.yScroll::-webkit-scrollbar-thumb {
+    height: 10%;
+    /* 스크롤바의 길이 */
+    background: #a5c5f5;
+    /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+.yScroll::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);
+    /*스크롤바 뒷 배경 색상*/
+}
+
+.mainCard:hover {
+    /* background-color: #a5c5f5; */
+    cursor: pointer;
+    transform: translateY(-0.2rem);
+    -webkit-transition: -webkit-transform .3s ease;
+    box-shadow: 10px 10px 8px 0 rgba(0, 0, 0, 0.021);
+}
+
+.mainInfo {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    width: 100%;
+    height: calc(100% - 5rem);
+}
+
+.mainInfo::-webkit-scrollbar {
+    height: 10px;
+    /* 스크롤바의 너비 */
+}
+
+.mainInfo::-webkit-scrollbar-thumb {
+    width: 10%;
+    /* 스크롤바의 길이 */
+    background: #a5c5f5;
+    /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+
+.mainInfo::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);
+    /*스크롤바 뒷 배경 색상*/
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: 'ghanachoco';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ghanachoco.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RixInooAriDuriR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EF_watermelonSalad';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_watermelonSalad.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
