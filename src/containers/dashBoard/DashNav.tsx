@@ -11,7 +11,7 @@ export const DashNav = () => {
         },
         {
             title: 'Skills',
-            url: '/skills',
+            url: '/skill',
             content: '사용가능한 기술을 확인하세요.'
         },
         {
